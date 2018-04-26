@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link href="includes/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="small-device.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -16,7 +16,8 @@
 </head>
 <body>
     <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light .bg-primary
+    " >
         <a class="navbar-brand" href="#"><img src="http://www.proluxmfg.com/images/proluxmfg.png" width="80" height="80" alt=""> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Homepage</a>
+              <a class="nav-link text-white" href="index.html">Homepage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link text-white" href="products.html">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">Contact</a>
+                <a class="nav-link text-white" href="contact-us.html">Contact</a>
             </li>
             <li class="nav-item">
         
@@ -43,13 +44,13 @@
     <!-- Client Login End --> 
                 
             </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "gallery.html">Gallery</a>
+            <li class = "nav-item text-white">
+                <a class = "nav-link text-white" href = "gallery.html">Gallery</a>
             </li>
           </ul>
         </div>
             <!-- Search Bar-->
-    <nav class="navbar navbar-light bg-light justify-content-between">
+    <nav class="navbar navbar-light justify-content-between">
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -92,13 +93,88 @@
             </div>
         </form>
     </div>
+    
+    
+
+<br/>
+<br/>
+
+
+              
+
+
+
+<!-- Our Products-->
+    <div class = "products">
+
+    
+
+    <nav class="navbar bg-white">
+            <!-- Dropdown -->
+            <nav class="navbar navbar-toggleable-md bg-white ">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            
+              </button>
+            
+              
+                  
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false"><h2 id = "words">
+                      What product are you looking for? (Click Here)</h2>
+                    </a>
+                    <div class="dropdown">
+                      <ul class="dropdown-menu dropdown-menu-form" role="menu">
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" > Walk-In Tubs
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" > Walk-In Showers
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" > Bathtubs
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" > Bathroom Remodeling
+                          </label>
+                        </li>
+                          <button type="button" class="btn btn-success">Submit</button>
+                        </li>
+                      </ul>
+                    </div>
+                   
+              </div>
+              </li>
+              </ul>
+              </div>
+
+
+
+              
+              
+
+              <!-- End Dropdown-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  
+</body>
     </html>
     
     
-    <!-- End Navbar --> 
-</body>
-</html>
+ 
+
+
+
+
+
+        
