@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,80 +12,84 @@
     <link href="style.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="small-device.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
 
 </head>
+
 <body>
-   <!-- nav bar -->
-   <nav class="navbar navbar-expand-lg navbar-light .bg-primary
-   " >
-        <a class="navbar-brand" href="#"><img src="http://www.proluxmfg.com/images/proluxmfg.png" width="80" height="80" alt=""> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light .bg-primary
+   ">
+        <a class="navbar-brand" href="#">
+            <img src="http://www.proluxmfg.com/images/proluxmfg.png" width="80" height="80" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="index.html">Homepage</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="products.html">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="contact-us.html">Contact</a>
-            </li>
-            <li class="nav-item">
-        
-          
-    
-    <!--<button class = 'btn btn-link' onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-    
-    
-    <!-- Client Login End --> 
-                
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link text-white" href = "gallery.html">Gallery</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact-us.html">Contact</a>
+                </li>
+                <li class="nav-item">
+
+
+
+                    <!--<button class = 'btn btn-link' onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+
+
+                    <!-- Client Login End -->
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                </li>
+            </ul>
         </div>
-            <!-- Search Bar-->
-    <nav class="navbar navbar-light justify-content-between">
+        <!-- Search Bar-->
+        <nav class="navbar navbar-light justify-content-between">
             <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-          </nav>
+        </nav>
 
         <!-- End Search Bar-->
-      </nav>
-      <!-- Modal -->
-      <div id="id01" class="modal">
-    
+    </nav>
+    <!-- Modal -->
+    <div id="id01" class="modal">
+
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
             </div>
-    
+
             <div class="container">
                 <label for="uname">
                     <b>Username</b>
                 </label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
-    
+
                 <label for="psw">
                     <b>Password</b>
                 </label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-    
+
                 <button type="submit">Login</button>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
             </div>
-    
+
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                 <span class="psw">Forgot
@@ -93,12 +98,86 @@
             </div>
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    
-    
-    <!-- End Navbar --> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- End Navbar -->
+
+
+    <!-- Gallery-->
+
+    <div class="card-columns">
+        <div class="card">
+            <img class="card-img-top" src="https://www.homeadvisor.com/r/wp-content/uploads/2015/12/bathroom-remodeling-trends-2016.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Wow!</h5>
+                <p class="card-text">Beautiful remodeling done in Layton, Utah.</p>
+            </div>
+        </div>
+        <div class="card p-3">
+            <blockquote class="blockquote mb-0 card-body">
+                <p>Exquisite designs by Prolux Manufacturing!</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Jessie Haus
+                        <cite title="Source Title"></cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Decor/Rooms_and_Styles/50-72L-BoldBathroom-C21-1000x1000.jpg">
+            <div class="card-body">
+                <h5 class="card-title">See our designs! </h5>
+                
+            
+            </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+            <blockquote class="blockquote mb-0">
+                <p>Give us a call today!</p>
+                <footer class="blockquote-footer">
+                    <small>
+                        
+                        <cite title="Source Title"></cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        
+        <div class="card">
+            <img class="card-img" src="https://kingfisher.scene7.com/is/image/Kingfisher/Category_Image_Bathroom_Suites?$PROMO_460_460$" alt="Card image">
+        </div>
+        <div class="card p-3 text-right">
+            <blockquote class="blockquote mb-0">
+                <p>Thousands of remodeling projects!</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Give us a call today!
+                        
+                        
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Fantastic!</h5>
+                <p class="card-text">We love our new bathroom!</p>
+                <p class="card-text">
+                    <small class="text-muted">John Doe</small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Gallery-->
 </body>
+
 </html>
