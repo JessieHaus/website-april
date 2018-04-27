@@ -9,22 +9,24 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="small-device.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    
 </head>
 
 <body>
 
 
 
-        <nav class="navbar navbar-expand-lg navbar-light .bg-primary
-        " >
-             <a class="navbar-brand" href="#"><img src="http://www.proluxmfg.com/images/proluxmfg.png" width="80" height="80" alt=""> </a>
+        <nav class="navbar navbar-expand-lg navbar-light .bg-primary" >
+             <a class="navbar-brand" href="#"><img id= "pic" src="http://www.proluxmfg.com/images/proluxmfg.png" alt=""> </a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
              </button>
@@ -32,7 +34,7 @@
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav mr-auto">
                  <li class="nav-item">
-                   <a class="nav-link text-white" href="index.html">Homepage</a>
+                   <a class="nav-link text-white" href="index.html" >Homepage</a>
                  </li>
                  <li class="nav-item">
                    <a class="nav-link text-white" href="products.html">Products</a>
@@ -151,6 +153,117 @@
         </div>
 
         <!-- End Contact Form -->
+<br/ >
+<h2> Click the buttons below to scroll through images</h2>
+        <!-- Buttons to move images-->
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+<!-- End Buttons to move images-->
+
+<br />
+<br />
+        <!-- Moving Image-->
+        <img class="mySlides" src="https://i.ytimg.com/vi/KCbc_HsiVuw/maxresdefault.jpg" />
+        
+        
+        <!-- End Moving image-->
+<!-- Footer-->
+<br />
+<br />
+
+
+
+<div  class="mySlides card bg-dark text-white">
+    <img class="card-img" src="http://plumbertallahasseeflorida.com/wp-content/uploads/KitchenBathRemodel.jpg" alt="Card image">
+    <div class="card-img-overlay">
+ 
+    </div>
+  </div>
+
+  
+
+  <!-- End Footer-->
+<br />
+<br />
+  <!-- Stars-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked fa-lg"></span>
+<span class="fa fa-star checked fa-lg"></span>
+<span class="fa fa-star checked fa-lg"></span>
+<span class="fa fa-star checked fa-lg"></span>
+<span class="fa fa-star checked fa-lg"></span>
+
+<!-- End Stars-->
+
+
+<!-- Rater-->
+
+<!-- 5 STar RATER --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<table>
+<thead>
+  
+ </thead>
+ <tbody>
+   <tr class="hotel-a">
+     <td><b>Rate Your Experience</b></td>
+     <td>
+       <div class="stars-outer">
+         <div class="stars-inner"></div>
+       </div>
+     </td>
+   </tr>
+   
+
+   <!-- 3 more rows here -->
+   
+ </tbody>
+</table>
+
+<!-- 5 STAR RATER END --> 
+
+  <div id="submit-button">
+    <input id="nameInput" class="form-control form-control-sm" type="text" placeholder="Name">
+    <input id="emailInput" class="form-control form-control-sm" type="text" placeholder="Email">
+    <input id="commentInput" class="form-control form-control-sm" type="text" placeholder="Comment">
+    <button id="addUser" type="button" class="btn btn-success">Submit</button>
+  </div>
+
+  <!-- Rating div -->
+  <div id="ratingButton">
+  </div>
+
+  <!-- Rater End-->
+
+
+
+  <script>
+    alert( 'This website uses cookies.' );
+
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+
+
+    </script>
+
+
+
 
 
 </body>
